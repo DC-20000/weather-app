@@ -52,7 +52,7 @@ function App(){
             if(weather.dt > weather.sunrise && weather.dt < weather.sunset) return 'from-sky-500 to-amber-500';
             else return 'from-blue-700 to-black';
         }
-        else if(weather.details === 'Haze'){
+        else if(weather.details === 'Haze' || 'Mist'){
             if(weather.dt > weather.sunrise && weather.dt < weather.sunset) return 'from-gray-500 to-gray-300';
             else return 'from-gray-800 to-gray-600';
         }
