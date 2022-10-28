@@ -34,7 +34,7 @@ function Inputs({setQuery,units,setunits}) {
   return (
     <div className='flex flex-row justify-center my-5'>
         <div className='flex items-center justify-center w-3/4 space-x-4'>
-            <input value={city} onChange ={(e)=>setCity(e.tar1get.value)} onKeyDown = {(e)=>{if(e.code === 'Enter') searchClick()}} className='mx-2 p-2 shadow-lg w-full outline-none capitalize font-sans' placeholder='search city...'></input>
+            <input value={city} onChange ={(e)=>setCity(e.target.value)} onKeyDown = {(e)=>{if(e.code === 'Enter') searchClick()}} className='mx-2 p-2 shadow-lg w-full outline-none capitalize font-sans' placeholder='search city...'></input>
             <UilSearch className = 'text-white cursor-pointer transition hover:scale-125' size={35} onClick= {searchClick} />
             <UilLocationPoint className = " text-white cursor-pointer transition hover:scale-125" size={35} onClick = {locationClick} />
         </div>
